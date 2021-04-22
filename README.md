@@ -12,3 +12,11 @@ Clone the project. In Eclipse...
 * Click "Next"
 * Click "Browse", find the directory and click "Select Folder"
 * Click "Finish"
+
+## Checkout a branch
+
+To checkout a branch, do the following:
+
+* **git fetch**
+* **git branch -a** Find the branch name you want in the list. 
+* Example: for the branch Week1_code, type this: **git checkout -t origin/Week1_code**
