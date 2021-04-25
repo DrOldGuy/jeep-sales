@@ -35,7 +35,7 @@ class FetchJeepTest {
     JeepModel model = JeepModel.WRANGLER;
     String trim = "Sport";
     String uri =
-        String.format("http://localhost/%d/jeeps?model=%s&trim=%s", serverPort, model, trim);
+        String.format("http://localhost:%d/jeeps?model=%s&trim=%s", serverPort, model, trim);
 
     ResponseEntity<List<Jeep>> response =
         restTemplate.exchange(uri, HttpMethod.GET, null, new ParameterizedTypeReference<>() {});
